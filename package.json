@@ -1,0 +1,24 @@
+{
+  "name": "dom-ii",
+  "version": "1.0.0",
+  "description": "Fun Bus wants you to make their site more interactive. They are relying on you to provide 10 unique events to enhance their site. Explore the many events available to you by using the [MDN events reference](https://developer.mozilla.org/en-US/docs/Web/Events).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patrickb42/DOM-II.git"
+  },
+  "author": "patrickb42",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/patrickb42/DOM-II/issues"
+  },
+  "homepage": "https://github.com/patrickb42/DOM-II#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.3"
+  }
+}
