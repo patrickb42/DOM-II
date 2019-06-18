@@ -31,3 +31,5 @@ document.addEventListener('contextmenu', (event) => {
   event.preventDefault();
   alert('NO CONTEXT MENU FOR YOU!');
 });
+
+window.addEventListener('load', () => alert('YOUR PAGE LOADED!'));
