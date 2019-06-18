@@ -27,3 +27,7 @@ document.addEventListener('keydown', (event) => {
   alert(`You pressed ${String.fromCharCode(event.keyCode)}`);
 });
 document.addEventListener('scroll', () => console.log(`Scrolled to ${window.scrollY}`));
+document.addEventListener('contextmenu', (event) => {
+  event.preventDefault();
+  alert('NO CONTEXT MENU FOR YOU!');
+});
