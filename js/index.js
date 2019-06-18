@@ -21,6 +21,8 @@ const BODY = document.querySelector('body');
 BODY.addEventListener('copy', () => {
   navigator.clipboard.readText().then(data => alert(`You copied ${data}`));
 });
-BODY.addEventListener('dblclick', (event) => {
-  alert(`You double-clicked ${event.target}`);
+BODY.addEventListener('dblclick', event => alert(`You double-clicked ${event.target}`));
+
+document.addEventListener('keydown', (event) => {
+  alert(`You pressed ${String.fromCharCode(event.keyCode)}`);
 });
