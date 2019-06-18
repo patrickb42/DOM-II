@@ -26,3 +26,4 @@ BODY.addEventListener('dblclick', event => alert(`You double-clicked ${event.tar
 document.addEventListener('keydown', (event) => {
   alert(`You pressed ${String.fromCharCode(event.keyCode)}`);
 });
+document.addEventListener('scroll', () => console.log(`Scrolled to ${window.scrollY}`));
