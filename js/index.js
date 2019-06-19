@@ -17,6 +17,25 @@ document.querySelectorAll('img')
     });
   });
 
+document.querySelector('header').style.zIndex = 1;
+
+function raise(event) {
+  event.stopPropagation();
+  TweenMax.to(event.currentTarget, 0.5, { yPercent: -10 });
+}
+
+function level(event) {
+  TweenMax.to(event.currentTarget, 0.5, { yPercent: 0 });
+}
+
+document.querySelectorAll('div')
+  .forEach((item) => {
+    if (item === document.querySelector('div.container.home')) return;
+    const div = item;
+    div.addEventListener('click', raise);
+    div.addEventListener('mouseleave', level);
+  });
+
 const BODY = document.querySelector('body');
 BODY.addEventListener('copy', () => {
   navigator.clipboard.readText().then(data => alert(`You copied ${data}`));
